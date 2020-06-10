@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        .app-top{
+            width:100%;
+            text-align: center;
+        }
+        table{
+            width: 60%;
+            border-collapse: collapse;
+            font-size:24px ;
+            margin-left: auto;
+            margin-right:auto;
+        }
+        .acc{
+            border-radius: 3px;
+            height: 26px;
+            width: 90%;
+            margin-left: auto;
+            margin-right:auto;
+        }
+        select{
+            width: 40%;
+            margin-left: auto;
+            margin-right:auto;
+            height: 26px;
+        }
+        select>option{
+            background-color:cyan ;
+        }
+        option{
+            text-align: center;
+        }
+        td{
+            border: 2px solid  darkblue;
+            height: 28px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="app-top">
+    <h1>欢迎注册</h1>
+</div>
+<div class="app-main">
+    <form>
+        <table class="register">
+            <tr>
+                <td>账号</td>
+                <td><input type="text" class="acc" name="username" /></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="password" class="acc" name="password"/></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    男<input type="radio" checked="checked" name="sex" value="male">
+                    女<input type="radio" name="sex" value="female">
+                </td>
+            </tr>
+            <tr>
+                <td>爱好</td>
+                <td>
+                    篮球<input type="checkbox" name="like" value="篮球">
+                    足球<input type="checkbox"  checked="checked" name="like" value="篮球">
+                    篮球<input type="checkbox" name="like" value="篮球">
+                    篮球<input type="checkbox" name="like" value="篮球">
+                </td>
+            </tr>
+            <tr>
+                <td>城市</td>
+                <td>
+                    <select nane="city">
+                        <option >--城市--</option>
+                        <option value="anhui" selected="selected">安徽</option>
+                        <option value="hubei">湖北</option>
+                        <option value="shanghai">上海</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="提交" >
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

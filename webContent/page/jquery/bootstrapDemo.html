@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表</title>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#listContent">导航栏</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#accordion" class="active" data-toggle="tab">标题一</a></li>
+                    <li><a href="#" >标题一</a></li>
+                    <li><a href="#" >标题二</a></li>
+                    <li><a href="#" >标题三</a></li>
+                    <li><a href="#" >标题四</a></li>
+                    <li class="dropdown navbar-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span>个人中心
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">选项一</a></li>
+                            <li><a href="#">选项二</a></li>
+                            <li><a href="#">选项三</a></li>
+                            <li><a href="#">选项四</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">分离选项一</a></li>
+                            <li><a href="#">分离选项二</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">分离选项一</a></li>
+                            <li><a href="#">分离选项二</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane fade" id="listContent">
+            <div class="panel-group" id="accordion" >
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#list1"  data-parent="#accordion">第一个列表</a>
+                    </div>
+                    <div class="panel-body panel-collapse collapse" id="list1">
+                        <div class="list-group">
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#list2"  data-parent="#accordion">第二个列表</a>
+                    </div>
+                    <div class="panel-body panel-collapse collapse" id="list2">
+                        <div class="list-group">
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#list3"  data-parent="#accordion">第三个列表</a>
+                    </div>
+                    <div class="panel-body panel-collapse collapse" id="list3">
+                        <div class="list-group">
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#list4" data-parent="#accordion">第四个列表</a>
+                    </div>
+                    <div class="panel-body panel-collapse collapse" id="list4">
+                        <div class="list-group">
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" href="#list5"  data-parent="#accordion">第五个列表</a>
+                    </div>
+                    <div class="panel-body panel-collapse collapse" id="list5">
+                        <div class="list-group">
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                            <div class="list-group-item">实例字样</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

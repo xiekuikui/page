@@ -1,0 +1,14 @@
+.brick{
+    position: absolute;
+    border: black 1px solid;
+    width: 15px;
+    height: 15px;
+}
+
+.ball{
+    position: absolute;
+    border: black 1px solid;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}

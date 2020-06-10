@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/demo1.css">
+    <title>登录页面</title>
+</head>
+<body>
+<div class="app-main">
+    <div class="app-main-top">登录</div>
+    <div class="app-main-body col-sm-12">
+        <div class="login-aera col-sm-4 ">
+            <div class="">
+                <div class="login-desc">用户账户</div>
+                <input type="text" id="username"/></div>
+            </div>
+
+            <div class="">
+                <div class="login-desc">用户密码</div>
+                <input type="password" id="password"/>
+            </div>
+            <button class="btn-danger" onclick="f()">登录</button>
+            <script>
+                function f() {
+                    var username= document.getElementById('username').innerText;
+                    var password=document.getElementById('password').innerText;
+                    console.log(username+" "+password);
+                }
+            </script>
+        </div>
+
+    </div>
+    <div class="app-main-foot">
+        <div>copyright</div>
+        <div>
+            <button type="button" href="study.html">跳转</button>
+            <a href="study.html">1212</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

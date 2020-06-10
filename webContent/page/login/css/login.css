@@ -1,0 +1,49 @@
+@charset "utf8";
+.main-body{
+    float: left;
+    background-color:gray ;
+}
+
+#head{
+    margin-top: 1%;
+}
+
+#body{
+    margin-top:1% ;
+    border: solid lightcyan 6px;
+}
+
+#foot{
+    margin-top: 4%;
+}
+
+#row{
+    margin-top: 20%;
+    height: 0px;
+    padding-bottom: 60%;
+}
+
+#row div{
+    margin-top: 3%;
+}
+#head-text-welcom{
+    font-size: 30px;
+}
+
+#head-img-logo{
+    width: 35%;
+}
+#head-left{
+    border-right: 2px solid black;
+}
+
+#test{
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    border-left: black 50px solid;
+    border-right: blanchedalmond 50px solid;
+    border-top: solid 50px blanchedalmond;
+    border-bottom:solid 50px blanchedalmond ;
+}
+

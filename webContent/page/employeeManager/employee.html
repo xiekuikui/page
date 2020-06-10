@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>员工信息管理表</title>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/table.js"></script>
+</head>
+<body>
+    <div class="panel panel-default" id="input-aera">
+        <ul class="nav nav-tabs">
+                <li role="presentation" class="active">
+                    <a class="text-info" data-toggle="tab" href="#insert-aera">添加员工</a>
+                </li>
+
+                <li role="presentation">
+                    <a class="text-info" data-toggle="tab" href="#change-aera">修改信息</a>
+                </li>
+
+                <li role="presentation">
+                    <a class="text-info" data-toggle="tab" href="#delete-aera">删除员工</a>
+                </li>
+
+        </ul>
+        <div class="tab-content">
+
+            <div id="insert-aera" class="tab-pane fade in active container-fluid" >
+                <div class="row" style="margin-top: 10px">
+                    <div class="col-md-3 col-sm-6">
+                        <div id="insert-id" class="input-group">
+                            <span class="input-group-addon" >员工编号：</span>
+                            <input type="text" name="emp-id" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="insert-name" class="input-group">
+                            <span class="input-group-addon">员工姓名：</span>
+                            <input type="text" name="emp-name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="insert-dept" class="input-group">
+                            <span class="text-muted input-group-addon">所属部门：</span>
+                            <input type="text" name="emp-dept" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="insert-salary" class="input-group">
+                            <span class="text-muted input-group-addon">员工薪资：</span>
+                            <input type="text" name="emp-salary" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin:10px 0px 10px 0px">
+                    <div id="add-confirm" class="col-xs-12">
+                        <button class="btn btn-primary col-xs-2 col-xs-offset-10" onclick="addEmp()">添加</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="change-aera" class="tab-pane fade container-fluid">
+                <div class="row" style="margin-top: 10px">
+                    <div class="col-md-3 col-sm-6">
+                        <div id="change-id" class="input-group">
+                            <span class="input-group-addon" >员工编号：</span>
+                            <input type="text" name="emp-id" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="change-name" class="input-group">
+                            <span class="input-group-addon">员工姓名：</span>
+                            <input type="text" name="emp-name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="change-dept" class="input-group">
+                            <span class="text-muted input-group-addon">所属部门：</span>
+                            <input type="text" name="emp-dept" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div id="change-salary" class="input-group">
+                            <span class="text-muted input-group-addon">员工薪资：</span>
+                            <input type="text" name="emp-salary" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin:10px 0px 10px 0px">
+                    <div id="change-confirm" class="col-xs-12">
+                        <button class="btn btn-primary  col-xs-2 col-xs-offset-10">修改</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="delete-aera" class="tab-pane fade container-fluid"  >
+                <div  class="row" style="margin:10px 0px 10px 0px">
+                    <div id="delete-confirm" class="col-xs-12">
+                        <button class="btn btn-primary  col-xs-2 col-xs-offset-10">删除</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="display-aera">
+       <table id="emp-table" class="table table-bordered table-hover text-center">
+           <thead>
+            <td>ID</td>
+            <td>姓名</td>
+            <td>部门</td>
+            <td>薪资</td>
+            <td>选择</td>
+           </thead>
+           <tbody>
+
+           </tbody>
+       </table>
+    </div>
+</body>
+</html>
