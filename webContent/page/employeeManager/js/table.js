@@ -57,6 +57,8 @@ function  updateEmp() {
 
 function deleteEmp() {
 
+    alert('供能暂未启用');
+
 }
 
 
