@@ -52,7 +52,7 @@ function  addEmp() {
 }
 
 function  updateEmp() {
-    alert('功能未启用')；
+    alert('功能未启用');
 
 }
 
